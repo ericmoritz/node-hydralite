@@ -1,7 +1,7 @@
 {
   "name": "node-hydralite",
   "description": "An implementation of Hydra Lite using jsonld-dsl\\",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/ericmoritz/node-hydralite",
   "license": "MIT",
   "author": "Eric Moritz",
