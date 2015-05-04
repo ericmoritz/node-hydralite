@@ -26,7 +26,7 @@ And the JSON looks like this:
 
 ```json
 {
-  "name": "Eric Moritz" Blog",
+  "name": "Eric Moritz' Blog",
   "entries": [
     {
       "url": "http://eric.themoritzfamily.com/hydra-lite.html",
