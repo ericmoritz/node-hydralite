@@ -1,0 +1,25 @@
+{
+  "name": "node-hydralite",
+  "description": "An implementation of Hydra Lite using jsonld-dsl\\",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ericmoritz/node-hydralite",
+  "license": "MIT",
+  "author": "Eric Moritz",
+  "main": "hydraLite.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericmoritz/node-hydralite.git"
+  },
+  "dependencies": {
+    "immutable": "^3.7.2",
+    "jsonld-dsl": "0.0.4"
+  },
+  "devDependencies": {
+    "babel": "^5.2.6",
+    "expect": "^1.6.0",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel/register"
+  }
+}
