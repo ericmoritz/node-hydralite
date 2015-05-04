@@ -2,8 +2,12 @@
 
 An implementation of [Hydra
 Lite](http://eric.themoritzfamily.com/hydra-lite.html) using
-jsonld-dsl. Hydra Lite is just enough JSON-LD and Hydra for bolting on
-hypermedia to existing services.
+[jsonld-dsl](http://ericmoritz.github.io/node-jsonld-dsl/).
+
+Hydra Lite is just enough JSON-LD and Hydra for bolting on hypermedia
+to existing services and this module is written to make that easy. Use
+[jsonld-dsl](http://ericmoritz.github.io/node-jsonld-dsl/) if you want
+to build a full blown JSON-LD service.
 
 
 ## Usage
@@ -82,3 +86,4 @@ This would produce the following JSON:
   ]
 }
 ```
+
