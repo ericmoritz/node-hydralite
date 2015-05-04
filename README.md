@@ -30,6 +30,7 @@ And the JSON looks like this:
   "entries": [
     {
       "url": "http://eric.themoritzfamily.com/hydra-lite.html",
+      "key": "hydra-lite",
       "name": "Hydra Lite"
     }
   ]
@@ -42,9 +43,9 @@ a `Resource()` call and add the additional properties.
 ```js
 function entryToResource(entry) {
   return Resource(
+     entry,
      URI('/entries/' + entry.key),
-     type('BlogEntry'),
-     entry
+     type('BlogEntry')
   )
 }
 
@@ -54,9 +55,9 @@ function view(req, res) {
 
   return res.json(
     Resource(
+      blog,
       URI('/'),
       type('Blog'),
-      blog,
       {'entries': blog.entries.map(entryToResource)}
     )
   )
@@ -66,3 +67,18 @@ function view(req, res) {
 This would produce the following JSON:
 
 
+```json
+{
+  "@id": "/",
+  "@type": ["Blog"],
+  "name": "Eric Moritz' Blog",
+  "entries": [
+    {
+      "@id": "/entries/hydra-lite",
+      "@type": ["BlogEntry"],
+      "url": "http://eric.themoritzfamily.com/hydra-lite.html",
+      "name": "Hydra Lite"
+    }
+  ]
+}
+```
